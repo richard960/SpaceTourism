@@ -15,17 +15,18 @@ header {
   margin-top: 5vh;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 nav {
   padding: 0 5% 0 2%;
-  min-width: 60vw;
+  min-width: 58vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   height: 10vh;
-  background-color: rgba(160, 158, 158, 0.166);
-  backdrop-filter: blur(5px);
+  background-color: rgba(160, 158, 158, 0.053);
+  backdrop-filter: blur(20px);
 }
 
 .transition {
@@ -74,7 +75,26 @@ nav {
 }
 
 @media (max-width: 900px) {
+  #home {
+    background: url('./assets/home/background-home-tablet.jpg') no-repeat center;
+    background-size: cover;
+  }
+
   span {
     display: none;
   }
+}
+
+hr {
+  position: absolute;
+  width: 33%;
+  left: 12%;
+  background-color: rgb(62, 63, 63);
+  border: none;
+  height: 1px;
+  z-index: 1;
+}
+svg {
+  position: absolute;
+  left: 5%;
 }
