@@ -9,6 +9,7 @@ body {
   background: url('./assets/home/background-home-desktop.jpg') no-repeat center;
   background-size: cover;
   width: 100%;
+  height: auto;
 }
 
 header {
@@ -80,9 +81,10 @@ nav {
     background-size: cover;
   }
 
-  span {
+  span, hr {
     display: none;
   }
+
 }
 
 hr {
@@ -97,4 +99,49 @@ hr {
 svg {
   position: absolute;
   left: 5%;
+}
+
+section {
+  width: 450px;
+}
+
+#home-title {
+  font-family: 'Bellefair', serif;
+  font-size: 150px;
+  font-weight: normal;
+  margin: 4% 0;
+}
+
+#home-description {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 32px;
+  font-size: 18px;
+  color: #D0D6F9;
+}
+
+.home-flex {
+  margin-top: 25vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#home-explore {
+  border: none;
+  border-radius: 100%;
+  width: 274px;
+  height: 274px;
+  background-color: #FFFFFF;
+  color: #0B0D17;
+  font-size: 32px;
+  font-family: 'Bellefair', serif;
+}
+section#home-section h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 4.72px;
+  color: #D0D6F9;
 }

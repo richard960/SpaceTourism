@@ -2,9 +2,11 @@ import React, {useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
+
   useEffect(() => {
     document.body.id = 'home'
-  }, [])
+  }, []);
+
     return(
       <div id='main'>
         <header>
@@ -17,13 +19,20 @@ const App = () => {
             <a className='transition'><span>03</span> Technology</a>
           </nav>
         </header>
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to
-  outer space and not hover kind of on the edge of it. Well sit back, and relax
-  because we’ll give you a truly out of this world experience!
-
-  Explore
+        <div className='home-flex'>
+          <section id='home-section'>
+            <h5>
+              SO, YOU WANT TO TRAVEL TO
+            </h5>
+            <h1 id='home-title'>SPACE</h1>
+            <p id='home-description'>
+              Let’s face it; if you want to go to space, you might as well genuinely go to
+              outer space and not hover kind of on the edge of it. Well sit back, and relax
+              because we’ll give you a truly out of this world experience!
+            </p>
+          </section>
+            <button id='home-explore'>EXPLORE</button>
+        </div>
       </div>)
 }
 
