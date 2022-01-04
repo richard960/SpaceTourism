@@ -1,7 +1,7 @@
 
 
 html, body, #app {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -29,6 +29,7 @@ nav {
   background-color: rgba(160, 158, 158, 0.053);
   backdrop-filter: blur(20px);
 }
+
 
 .transition {
   display: block;
@@ -75,17 +76,31 @@ nav {
   opacity: 1;
 }
 
-@media (max-width: 900px) {
+
+@media (min-width: 500px) and (max-width: 900px) {
   #home {
-    background: url('./assets/home/background-home-tablet.jpg') no-repeat center;
+    background: url('./assets/home/background-home-desktop.jpg') no-repeat center;
     background-size: cover;
   }
 
   span, hr {
     display: none;
   }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  #home {
+    background: url('./assets/home/background-home-mobile.jpg') no-repeat center;
+    background-size: cover;
+  }
 
 }
+@media (min-width: 901px) {
+  html, body, #app {
+    height: 100%;
+  }
+}
+
 
 hr {
   position: absolute;
@@ -109,7 +124,7 @@ section {
   font-family: 'Bellefair', serif;
   font-size: 150px;
   font-weight: normal;
-  margin: 4% 0;
+  margin: 5% 0;
 }
 
 #home-description {
@@ -126,9 +141,11 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 #home-explore {
+  margin-top: 10%;
   border: none;
   border-radius: 100%;
   width: 274px;
@@ -145,3 +162,24 @@ section#home-section h5 {
   letter-spacing: 4.72px;
   color: #D0D6F9;
 }
+
+.fade-in h5{
+	animation: fadeIn 1.8s ease-in;
+  opacity: 1;
+}
+.fade-in h1 {
+  animation: fadeIn 2.8s ease-in;
+}
+.fade-in p {
+  animation: fadeIn 3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
