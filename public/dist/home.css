@@ -1,7 +1,7 @@
 
 
 html, body, #app {
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -77,29 +77,12 @@ nav {
 }
 
 
-@media (min-width: 500px) and (max-width: 900px) {
-  #home {
-    background: url('./assets/home/background-home-desktop.jpg') no-repeat center;
-    background-size: cover;
-  }
 
-  span, hr {
-    display: none;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 479px) {
-  #home {
-    background: url('./assets/home/background-home-mobile.jpg') no-repeat center;
-    background-size: cover;
-  }
-
-}
-@media (min-width: 901px) {
+/* @media (min-width: 901px) {
   html, body, #app {
     height: 100%;
   }
-}
+} */
 
 
 hr {
@@ -181,5 +164,48 @@ section#home-section h5 {
   to {
  	opacity: 1;
   }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+  #home {
+    background: url('./assets/home/background-home-tablet.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  @media (max-height: 1024px) {
+    html, body, #app {
+      height: auto;
+    }
+  }
+  span, hr {
+    display: none;
+  }
+  #home-explore {
+    width: 220px;
+    height: 220px;
+  }
+
+  #home-description {
+    font-size: 16px;
+  }
+  #home-section h5 {
+    font-size: 20px;
+  }
+  .home-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  #home {
+    background: url('./assets/home/background-home-mobile.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  html, body, #app {
+    height: auto;
+  }
+
 }
 
