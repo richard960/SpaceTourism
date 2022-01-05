@@ -20,6 +20,9 @@ header {
 }
 
 nav {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
   padding: 0 5% 0 2%;
   min-width: 58vw;
   display: flex;
@@ -28,6 +31,11 @@ nav {
   height: 10vh;
   background-color: rgba(160, 158, 158, 0.053);
   backdrop-filter: blur(20px);
+}
+
+a span {
+  font-weight: bold;
+  letter-spacing: 2.7px;
 }
 
 
@@ -145,6 +153,10 @@ section {
   color: #D0D6F9;
 }
 
+#close {
+  display: none;
+}
+
 .fade-in h5{
 	animation: fadeIn 1.8s ease-in;
   opacity: 1;
@@ -196,12 +208,17 @@ section {
     margin-top: 15vh;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+  #nav-container {
+    font-size: 14px;
+    letter-spacing: 2.36px;
   }
 }
 
 @media (max-width: 479px) {
   #home {
-    background: url('./assets/home/background-home-mobile.jpg') no-repeat center;
+    background: url('./assets/home/background-home-mobile.jpg') no-repeat center black;
     background-size: cover;
   }
 
@@ -210,7 +227,7 @@ section {
   }
 
   .home-flex {
-    margin-top: 15vh;
+    margin-top: 16vh;
   }
 
   #home-explore {
@@ -238,6 +255,50 @@ section {
     font-size: 80px;
     text-align: center;
   }
+   hr {
+    display: none;
+  }
 
+  #nav-menu span {
+    display: block;
+    width: 24px;
+    background-color: white;
+    height: 3px;
+    margin: 4px 0;
+  }
+  #nav-menu {
+    margin-right: 20px;
+  }
+
+  #nav-container {
+    width: 65%;
+    right: -65%;
+    padding: 15% 0 0 5%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    height: auto;
+    align-items: initial;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+  #nav-container svg, #nav-container a {
+    display: none;
+  }
+  #main {
+    position: relative;
+    overflow: hidden;
+  }
+
+  a.directory::after {
+    display: none;
+  }
+
+  #close {
+    display: inherit;
+    position: relative;
+    left: 45vw;
+  }
 }
 
