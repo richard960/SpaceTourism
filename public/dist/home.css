@@ -128,6 +128,7 @@ section {
 }
 
 .home-flex {
+  gap: 1%;
   margin-top: 15vh;
   display: flex;
   justify-content: space-around;
@@ -222,7 +223,7 @@ section {
     background-size: cover;
   }
 
-  html, body, #app {
+  html, #main, body, #app {
     height: auto;
   }
 
@@ -266,8 +267,26 @@ section {
     height: 3px;
     margin: 4px 0;
   }
+
   #nav-menu {
+    position: absolute;
     margin-right: 20px;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .close {
+    display: initial;
+  }
+
+  nav#nav-container.slideIn {
+    right: 0;
+    transition: 500ms
+  }
+  nav#nav-container.slideOut {
+    transition: 500ms
   }
 
   #nav-container {
@@ -283,9 +302,10 @@ section {
     justify-content: flex-start;
     gap: 10%;
   }
-  #nav-container svg, #nav-container a {
+
+  /* #nav-container svg, #nav-container a {
     display: none;
-  }
+  } */
   #main {
     position: relative;
     overflow: hidden;
