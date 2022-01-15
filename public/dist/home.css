@@ -1,6 +1,6 @@
 
 
-html, body, #app {
+html, body, #app, #top{
   height: 100%;
   width: 100%;
 }
@@ -48,7 +48,7 @@ a span {
 .transition::after {
   content: '';
   position: absolute;
-  bottom: -98%;
+  bottom: -100%;
   left: 0;
   width: 100%;
   height: 0.1em;
@@ -223,10 +223,14 @@ section {
     background-size: cover;
   }
 
-  html, #main, body, #app {
+  html, .main, body, #app {
     height: auto;
   }
-
+  @media (min-height: 812px) {
+    html, .main, body, #app {
+      height: 100%;
+    }
+  }
   .home-flex {
     margin-top: 16vh;
   }
@@ -306,7 +310,7 @@ section {
   /* #nav-container svg, #nav-container a {
     display: none;
   } */
-  #main {
+  .main {
     position: relative;
     overflow: hidden;
   }
@@ -319,6 +323,9 @@ section {
     display: inherit;
     position: relative;
     left: 45vw;
+  }
+  .transition::after {
+    content: initial;
   }
 }
 
