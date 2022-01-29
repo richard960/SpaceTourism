@@ -5,8 +5,8 @@ import Destinations from './components/destinations.jsx'
 const App = () => {
   return(
     <div id='top'>
-      {/* <Destinations/> */}
-      <Home/>
+      <Destinations/>
+      {/* <Home/> */}
     </div>
   )
 }

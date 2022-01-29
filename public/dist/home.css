@@ -11,7 +11,12 @@ body {
   width: 100%;
   height: auto;
 }
-
+#destination {
+  background: url('./assets/destination/background-destination-desktop.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
 header {
   margin-top: 5vh;
   display: flex;
@@ -111,14 +116,18 @@ section {
   width: 450px;
 }
 
-#home-title {
+#home-title, #planet-title {
   font-family: 'Bellefair', serif;
   font-size: 150px;
   font-weight: normal;
   margin: 5% 0;
 }
 
-#home-description {
+#planet-title {
+  font-size: 100px;
+}
+
+#home-description, #planet-description {
   font-family: 'Barlow', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -153,7 +162,29 @@ section {
   letter-spacing: 4.72px;
   color: #D0D6F9;
 }
-
+#planets {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.planet {
+  font-family: 'Barlow Condensed';
+  font-size: 16px;
+  color: #D0D6F9;
+  letter-spacing: 2.7px;
+}
+#planet-container {
+  width: 445px;
+}
+#planet-meta {
+  display: flex;
+  gap: 15%;
+}
+#hr-planet {
+  margin: 5% 0;
+  position: initial;
+  width: 100%;
+}
 #close {
   display: none;
 }
@@ -247,7 +278,7 @@ section {
     text-align: center;
   }
 
-  #home-section h5 {
+  #home-section h5{
     font-size: 16px;
     text-align: center;
     letter-spacing: 2.7px;
@@ -256,7 +287,7 @@ section {
     width: 327px;
   }
 
-  #home-title {
+  #home-title, #planet-title {
     font-size: 80px;
     text-align: center;
   }

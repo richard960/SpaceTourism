@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 const Destinations = () => {
   const [isToggle, setToggle] = useState(false);
@@ -6,6 +6,11 @@ const Destinations = () => {
   const toggle = function() {
     setToggle(!isToggle);
   }
+
+  useEffect(() => {
+    document.body.id = 'destination'
+  }, [])
+
   return (
     <div className='main'>
       <header>
@@ -25,21 +30,29 @@ const Destinations = () => {
           </nav>
         </header>
         <div className='home-flex'>
-          <section id='planets'>
-            <h5>
-            Moon
-            Mars
-            Europa
-            Titan
-            </h5>
+           <div>
+             <h3>01 PICK YOUR DESTINATION</h3>
+             <img src='./assets/destination/image-moon.png'></img>
+           </div>
+          <section id='planet-container'>
+            <div id='planets'>
+              <span className='planet'>MOON</span>
+              <span className='planet'>MARS</span>
+              <span className='planet'>EUROPA</span>
+              <span className='planet'>TITAN</span>
+            </div>
             <h1 id='planet-title'>MOON</h1>
             <p id='planet-description'>
             See our planet as you’ve never seen it before. A perfect relaxing trip away to help
             regain perspective and come back refreshed. While you’re there, take in some history
             by visiting the Luna 2 and Apollo 11 landing sites.
             </p>
+          <hr id='hr-planet'></hr>
+          <div id='planet-meta'>
+            <span>AVG. DISTANCE <br></br> 384,400 KM</span>
+            <span>EST. TRAVEL TIME <br></br> 3 DAYS</span>
+          </div>
           </section>
-            <button id='home-explore'>EXPLORE</button>
         </div>
     </div>
   )
