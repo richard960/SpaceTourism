@@ -1,12 +1,18 @@
 import React, {useState, useEffect} from 'react';
-
+import Moon from './moon.jsx';
+import Mars from './mars.jsx';
+import Europa from './europa.jsx';
+import Titan from './titan.jsx'
 const Destinations = () => {
   const [isToggle, setToggle] = useState(false);
+  const [dest, setDest] = useState('MOON');
 
   const toggle = function() {
     setToggle(!isToggle);
   }
-
+  const setDestination = function(e) {
+    setDest(e.target.innerHTML);
+  }
   useEffect(() => {
     document.body.id = 'destination'
   }, [])
@@ -32,26 +38,30 @@ const Destinations = () => {
         <div className='home-flex'>
            <div>
              <h3>01 PICK YOUR DESTINATION</h3>
-             <img src='./assets/destination/image-moon.png'></img>
+             {dest === 'MOON'
+              ? <img src='./assets/destination/image-moon.png'></img> :
+                dest === 'MARS'
+                ? <img src='./assets/destination/image-mars.png'></img> :
+                  dest === 'EUROPA'
+                    ? <img src='./assets/destination/image-europa.png'></img> :
+                      dest === 'TITAN'
+                        ? <img src='./assets/destination/image-titan.png'></img> : <img src='./assets/destination/image-moon.png'></img>}
            </div>
           <section id='planet-container'>
-            <div id='planets'>
-              <span className='planet'>MOON</span>
-              <span className='planet'>MARS</span>
-              <span className='planet'>EUROPA</span>
-              <span className='planet'>TITAN</span>
-            </div>
-            <h1 id='planet-title'>MOON</h1>
-            <p id='planet-description'>
-            See our planet as you’ve never seen it before. A perfect relaxing trip away to help
-            regain perspective and come back refreshed. While you’re there, take in some history
-            by visiting the Luna 2 and Apollo 11 landing sites.
-            </p>
-          <hr id='hr-planet'></hr>
-          <div id='planet-meta'>
-            <span>AVG. DISTANCE <br></br> 384,400 KM</span>
-            <span>EST. TRAVEL TIME <br></br> 3 DAYS</span>
+          <div id='planets'>
+            <span className='planet' onClick={setDestination}>MOON</span>
+            <span className='planet' onClick={setDestination}>MARS</span>
+            <span className='planet' onClick={setDestination}>EUROPA</span>
+            <span className='planet' onClick={setDestination}>TITAN</span>
           </div>
+            {dest === 'MOON'
+              ? <Moon/> :
+                dest === 'MARS'
+                  ? <Mars/> :
+                    dest === 'EUROPA'
+                      ? <Europa/> :
+                        dest === 'TITAN'
+                          ? <Titan/> : 'MOON'}
           </section>
         </div>
     </div>
