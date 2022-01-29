@@ -166,6 +166,7 @@ section {
   display: flex;
   justify-content: space-between;
   width: 60%;
+  margin-bottom: 10%;
 }
 .planet {
   font-family: 'Barlow Condensed';
@@ -175,6 +176,7 @@ section {
 }
 #planet-container {
   width: 445px;
+  align-self: center;
 }
 #planet-meta {
   display: flex;
@@ -184,6 +186,27 @@ section {
   margin: 5% 0;
   position: initial;
   width: 100%;
+}
+#planet-img h3 {
+  font-family: 'Barlow Condensed';
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  margin-bottom: 15%;
+}
+
+#planet-description {
+  margin-bottom: 10%;
+}
+
+#planet-flex {
+  justify-content: space-evenly;
+}
+
+h3 span {
+  font-weight: bold;
+  color: #FFFFFF;
+  opacity: 25%;
 }
 #close {
   display: none;

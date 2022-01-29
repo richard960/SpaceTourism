@@ -35,9 +35,9 @@ const Destinations = () => {
             <a className='transition'><span>03</span> Technology</a>
           </nav>
         </header>
-        <div className='home-flex'>
-           <div>
-             <h3>01 PICK YOUR DESTINATION</h3>
+        <div className='home-flex' id='planet-flex'>
+           <div id='planet-img'>
+             <h3><span>01</span> PICK YOUR DESTINATION</h3>
              {dest === 'MOON'
               ? <img src='./assets/destination/image-moon.png'></img> :
                 dest === 'MARS'
