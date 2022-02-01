@@ -520,6 +520,7 @@ h3 span {
   }
   #planet-container {
     width: 327px;
+    height: 500px;
   }
   #planets {
     margin: 10% auto;
