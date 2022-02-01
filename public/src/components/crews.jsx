@@ -5,11 +5,30 @@ import Victor from './victor.jsx';
 import Mark from './mark.jsx';
 const Crews = () => {
   const [isToggle, setToggle] = useState(false);
+  const [crew, setCrew] = useState('douglas')
 
   const toggle = function() {
     setToggle(!isToggle);
   }
-
+  const currentCrew = function(e) {
+    const id = e.target.id;
+    if(id === 'c0') {
+      setCrew('douglas');
+      return;
+    }
+    if(id === 'c1') {
+      setCrew('mark');
+      return;
+    }
+    if(id === 'c2') {
+      setCrew('victor');
+      return;
+    }
+    if(id === 'c3') {
+      setCrew('anousheh');
+      return;
+    }
+  }
   useEffect(() => {
     let elem = document.querySelector('#home-section');
     let rect = elem.getBoundingClientRect();
@@ -44,14 +63,14 @@ const Crews = () => {
           </nav>
         </header>
         <div className='flex' id='crew-flex'>
-          {/* <section id='home-section' className='crew-section'>
-            <h3><span>02</span>MEET YOUR CREW</h3>
-          </section>
-          <img src='./assets/crew/image-douglas-hurley.png' width='568.07px' height='712px'></img> */}
-              {/* <Douglas/> */}
-              {/* <Anousheh/> */}
-              {/* <Victor/> */}
-              <Mark/>
+              {crew === 'douglas'
+                ? <Douglas setCrew={currentCrew}/> :
+                  crew === 'mark'
+                  ? <Mark setCrew={currentCrew}/>  :
+                    crew === 'victor'
+                    ? <Victor setCrew={currentCrew}/> :
+                      crew === 'anousheh'
+                      ? <Anousheh setCrew={currentCrew}/> : <Douglas setCrew={currentCrew}/>}
         </div>
       </div>)
 }

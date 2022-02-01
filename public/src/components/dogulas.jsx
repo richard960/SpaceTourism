@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Douglas = function() {
+const Douglas = function({setCrew}) {
   return(
     <>
     <section id='home-section' className='crew-section'>
@@ -16,9 +16,9 @@ const Douglas = function() {
             </p>
             <div className='circle-nav'>
             <span className='circle fill'></span>
-            <span className='circle'></span>
-            <span className='circle'></span>
-            <span className='circle'></span>
+            <span className='circle' id='c1' onClick={setCrew}></span>
+            <span className='circle' id='c2' onClick={setCrew}></span>
+            <span className='circle' id='c3' onClick={setCrew}></span>
             </div>
           </section>
           <img className='crew-img' src='./assets/crew/image-douglas-hurley.png' width='568.07px' height='712px'></img>

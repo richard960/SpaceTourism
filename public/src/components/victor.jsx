@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Victor = function() {
+const Victor = function({setCrew}) {
   return(
     <>
     <section id='home-section' className='crew-section'>
@@ -16,10 +16,10 @@ const Victor = function() {
             station systems flight engineer.
             </p>
             <div className='circle-nav'>
-            <span className='circle'></span>
-            <span className='circle'></span>
+            <span className='circle' id='c0' onClick={setCrew}></span>
+            <span className='circle' id='c1' onClick={setCrew}></span>
             <span className='circle fill'></span>
-            <span className='circle'></span>
+            <span className='circle' id='c3' onClick={setCrew}></span>
             </div>
           </section>
           <img className='crew-img' src='./assets/crew/image-victor-glover.png' width='568.07px' height='712px'></img>

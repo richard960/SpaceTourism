@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Mark = function() {
+const Mark = function({setCrew}) {
   return(
     <>
     <section id='home-section' className='crew-section'>
@@ -15,10 +15,10 @@ const Mark = function() {
             African to travel to space as a space tourist.
             </p>
             <div className='circle-nav'>
+            <span className='circle' id='c0' onClick={setCrew}></span>
             <span className='circle fill'></span>
-            <span className='circle'></span>
-            <span className='circle'></span>
-            <span className='circle'></span>
+            <span className='circle' id='c2' onClick={setCrew}></span>
+            <span className='circle' id='c3' onClick={setCrew}></span>
             </div>
           </section>
           <img className='crew-img' src='./assets/crew/image-mark-shuttleworth.png' width='568.07px' height='712px'></img>

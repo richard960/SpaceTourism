@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Anousheh = function() {
+const Anousheh = function({setCrew}) {
   return(
     <>
     <section id='home-section' className='crew-section'>
@@ -15,10 +15,10 @@ const Anousheh = function() {
             fly to the ISS, and the first Iranian in space.
             </p>
             <div className='circle-nav'>
-            <span className='circle'></span>
+            <span className='circle' id='c0' onClick={setCrew}></span>
+            <span className='circle' id='c1' onClick={setCrew}></span>
+            <span className='circle' id='c2' onClick={setCrew}></span>
             <span className='circle fill'></span>
-            <span className='circle'></span>
-            <span className='circle'></span>
             </div>
           </section>
           <img className='crew-img' src='./assets/crew/image-anousheh-ansari.png' width='568.07px' height='712px'></img>
