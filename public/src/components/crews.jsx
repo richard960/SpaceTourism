@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
-
-
-const Home = () => {
+import Douglas from './dogulas.jsx';
+import Anousheh from './anousheh.jsx';
+import Victor from './victor.jsx';
+import Mark from './mark.jsx';
+const Crews = () => {
   const [isToggle, setToggle] = useState(false);
 
   const toggle = function() {
@@ -20,7 +22,7 @@ const Home = () => {
         document.querySelector('.flex section').classList.add('fade-in');
       }
     })
-    document.body.id = 'home';
+    document.body.id = 'crew';
   }, []);
 
     return(
@@ -41,21 +43,17 @@ const Home = () => {
             <a className='transition'><span>03</span> TECHNOLOGY</a>
           </nav>
         </header>
-        <div className='flex'>
-          <section id='home-section'>
-            <h5>
-              SO, YOU WANT TO TRAVEL TO
-            </h5>
-            <h1 id='home-title'>SPACE</h1>
-            <p id='home-description'>
-              Let’s face it; if you want to go to space, you might as well genuinely go to
-              outer space and not hover kind of on the edge of it. Well sit back, and relax
-              because we’ll give you a truly out of this world experience!
-            </p>
+        <div className='flex' id='crew-flex'>
+          {/* <section id='home-section' className='crew-section'>
+            <h3><span>02</span>MEET YOUR CREW</h3>
           </section>
-            <button id='home-explore'>EXPLORE</button>
+          <img src='./assets/crew/image-douglas-hurley.png' width='568.07px' height='712px'></img> */}
+              {/* <Douglas/> */}
+              {/* <Anousheh/> */}
+              {/* <Victor/> */}
+              <Mark/>
         </div>
       </div>)
 }
 
-export default Home;
+export default Crews;

@@ -17,6 +17,12 @@ body {
   width: 100%;
   height: auto;
 }
+#crew {
+  background: url('./assets/crew/background-crew-desktop.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
 header {
   margin-top: 5vh;
   display: flex;
@@ -36,6 +42,7 @@ nav {
   height: 10vh;
   background-color: rgba(160, 158, 158, 0.053);
   backdrop-filter: blur(20px);
+  gap: 1.5%;
 }
 
 a span {
@@ -139,7 +146,7 @@ section {
   color: #D0D6F9;
 }
 
-.home-flex {
+.flex {
   gap: 1%;
   margin-top: 15vh;
   display: flex;
@@ -165,6 +172,7 @@ section {
   letter-spacing: 4.72px;
   color: #D0D6F9;
 }
+
 #planets {
   display: flex;
   justify-content: space-between;
@@ -227,7 +235,60 @@ section {
 .planet.directory {
   color: white;
 }
+#crew-flex {
+  align-items: flex-start;
+  margin-top: 8vh;
+  justify-content: center;
+}
 
+.crew-section {
+  display: flex;
+  flex-direction: column;
+  width: 488px;
+}
+#crew-name {
+  font-family: 'Bellefair';
+  font-size: 56px;
+  font-weight: normal;
+  margin: 2vh 0 2vh 0;
+  width: max-content;
+}
+
+.crew-section #crew-title {
+  font-family: 'Bellefair';
+  font-size: 32px;
+  font-weight: normal;
+  color: #FFFFFF;
+  opacity: 50.42%;
+}
+
+#crew-description {
+  font-family: 'Barlow';
+  font-size: 18px;
+  font-weight: normal;
+  color: #D0D6F9;
+  line-height: 32px;
+  width: 444px;
+  margin-bottom: 20vh;
+}
+.crew-section h3 {
+  font-family: 'Barlow Condensed';
+  font-weight: normal;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  margin-bottom: 15vh;
+}
+.circle-nav span {
+  margin-right: 10%;
+}
+.crew-section > h3 span {
+  margin-right: 5%;
+}
+
+.crew-img {
+  position: relative;
+  left: 8%;
+}
 h3 span {
   font-weight: bold;
   color: #FFFFFF;
@@ -237,6 +298,18 @@ h3 span {
   display: none;
 }
 
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #979797;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.fill {
+  background-color: #FFFFFF;
+}
 .fade-in h5{
 	animation: fadeIn 1.8s ease-in;
   opacity: 1;
@@ -289,7 +362,7 @@ h3 span {
   #home-section h5 {
     font-size: 20px;
   }
-  .home-flex {
+  .flex {
     margin-top: 15vh;
     flex-direction: column;
     align-items: center;
@@ -395,7 +468,7 @@ h3 span {
       min-height: 100%;
     }
   }
-  .home-flex {
+  .flex {
     margin-top: 16vh;
   }
 
