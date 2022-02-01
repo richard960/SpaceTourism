@@ -11,8 +11,8 @@ function Mars() {
     </p>
     <hr id='hr-planet'></hr>
     <div id='planet-meta'>
-    <span>AVG. DISTANCE <br></br> 225 MIL. KM</span>
-    <span>EST. TRAVEL TIME <br></br> 9 MONTHS</span>
+    <h3 className='planetDistance'>AVG. DISTANCE <br></br> <span>225 MIL. KM</span></h3>
+    <h3 className='planetTravel'>EST. TRAVEL TIME <br></br> <span>9 MONTHS</span></h3>
     </div>
   </>
   )

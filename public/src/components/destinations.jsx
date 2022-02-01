@@ -39,20 +39,20 @@ const Destinations = () => {
            <div id='planet-img'>
              <h3><span>01</span> PICK YOUR DESTINATION</h3>
              {dest === 'MOON'
-              ? <img src='./assets/destination/image-moon.png'></img> :
+              ? <img className='currentPlanet' src='./assets/destination/image-moon.png'></img> :
                 dest === 'MARS'
-                ? <img src='./assets/destination/image-mars.png'></img> :
+                ? <img className='currentPlanet' src='./assets/destination/image-mars.png'></img> :
                   dest === 'EUROPA'
-                    ? <img src='./assets/destination/image-europa.png'></img> :
+                    ? <img className='currentPlanet' src='./assets/destination/image-europa.png'></img> :
                       dest === 'TITAN'
-                        ? <img src='./assets/destination/image-titan.png'></img> : <img src='./assets/destination/image-moon.png'></img>}
+                        ? <img className='currentPlanet' src='./assets/destination/image-titan.png'></img> : <img className='currentPlanet' src='./assets/destination/image-moon.png'></img>}
            </div>
           <section id='planet-container'>
           <div id='planets'>
-            <span className='planet' onClick={setDestination}>MOON</span>
-            <span className='planet' onClick={setDestination}>MARS</span>
-            <span className='planet' onClick={setDestination}>EUROPA</span>
-            <span className='planet' onClick={setDestination}>TITAN</span>
+            <span className={`planet ${dest === 'MOON' ? 'directory' : 'transition'}`} onClick={setDestination}>MOON</span>
+            <span className={`planet ${dest === 'MARS' ? 'directory' : 'transition'}`}onClick={setDestination}>MARS</span>
+            <span className={`planet ${dest === 'EUROPA' ? 'directory' : 'transition'}`} onClick={setDestination}>EUROPA</span>
+            <span className={`planet ${dest === 'TITAN' ? 'directory' : 'transition'}`} onClick={setDestination}>TITAN</span>
           </div>
             {dest === 'MOON'
               ? <Moon/> :
@@ -61,7 +61,7 @@ const Destinations = () => {
                     dest === 'EUROPA'
                       ? <Europa/> :
                         dest === 'TITAN'
-                          ? <Titan/> : 'MOON'}
+                          ? <Titan/> : <Moon/>}
           </section>
         </div>
     </div>

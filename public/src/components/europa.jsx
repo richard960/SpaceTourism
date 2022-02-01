@@ -12,8 +12,8 @@ function Europa() {
     </p>
     <hr id='hr-planet'></hr>
     <div id='planet-meta'>
-    <span>AVG. DISTANCE <br></br>628 MIL. KM</span>
-    <span>EST. TRAVEL TIME <br></br> 3 YEARS</span>
+    <h3 className='planetDistance'>AVG. DISTANCE <br></br><span>628 MIL. KM</span></h3>
+    <h3 className='planetTravel'>EST. TRAVEL TIME <br></br> <span>3 YEARS</span></h3>
     </div>
   </>
   )

@@ -1,7 +1,7 @@
 
 
 html, body, #app, #top{
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -41,6 +41,9 @@ nav {
 a span {
   font-weight: bold;
   letter-spacing: 2.7px;
+}
+a {
+  cursor: pointer;
 }
 
 
@@ -173,6 +176,7 @@ section {
   font-size: 16px;
   color: #D0D6F9;
   letter-spacing: 2.7px;
+  cursor: pointer;
 }
 #planet-container {
   width: 445px;
@@ -181,6 +185,22 @@ section {
 #planet-meta {
   display: flex;
   gap: 15%;
+}
+
+.planetDistance, .planetTravel {
+  font-family: 'Barlow Condensed';
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color: #D0D6F9;
+}
+#planet-meta span{
+  opacity: 100%;
+  font-size: 28px;
+  font-family: 'Bellefair';
+  font-weight: normal;
+  margin: 3vh 0;
+  display: block;
 }
 #hr-planet {
   margin: 5% 0;
@@ -192,7 +212,7 @@ section {
   font-weight: normal;
   font-size: 28px;
   letter-spacing: 4.72px;
-  margin-bottom: 15%;
+  margin-bottom: 10vh;
 }
 
 #planet-description {
@@ -201,6 +221,11 @@ section {
 
 #planet-flex {
   justify-content: space-evenly;
+  margin-bottom: 10vh;
+}
+
+.planet.directory {
+  color: white;
 }
 
 h3 span {
@@ -238,6 +263,11 @@ h3 span {
     background-size: cover;
   }
 
+  #destination {
+    background: url('./assets/destination/background-destination-tablet.jpg') no-repeat center;
+    background-size: cover;
+  }
+
   @media (max-height: 1024px) {
     html, body, #app {
       height: auto;
@@ -268,6 +298,83 @@ h3 span {
   #nav-container {
     font-size: 14px;
     letter-spacing: 2.36px;
+  }
+  .currentPlanet {
+    width: 300px;
+  }
+
+  #planet-img {
+    width: 100%;
+  }
+  #planet-img h3 {
+    text-align: left;
+    padding-left: 10%;
+  }
+  #planet-description {
+    width: 573px;
+    font-size: 16px;
+  }
+  #planet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 573px;
+  }
+  .planet{
+    display: initial;
+    margin-top: 10%;
+  }
+  .planet.directory {
+    color: white;
+  }
+  .directory::after, .transition::after {
+    bottom: -30%;
+  }
+  .transition::after {
+    height: 0.15em;
+  }
+  #planet-img h3 span {
+    display: initial;
+  }
+  #planet-img h3 {
+    font-size: 20px;
+    margin-bottom: 8vh;
+  }
+  #planet-title {
+    font-size: 80px;
+  }
+  #planets {
+    margin-bottom: 5%;
+  }
+  #planet-meta span {
+    font-family: 'Bellefair';
+    display: initial;
+    font-size: 28px;
+    color: white;
+    font-weight: normal;
+    opacity: 100%;
+    margin: 3vh;
+    display: block;
+  }
+
+  #planet-meta {
+    width: 100%;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 8vh;
+  }
+  .planetDistance, .planetTravel {
+    font-family: 'Barlow Condensed';
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: #D0D6F9;
+  }
+  #hr-planet {
+    display: initial;
+  }
+  #planet-flex {
+    margin-bottom: initial;
   }
 }
 

@@ -11,8 +11,8 @@ function Moon() {
     </p>
     <hr id='hr-planet'></hr>
     <div id='planet-meta'>
-    <span>AVG. DISTANCE <br></br> 384,400 KM</span>
-    <span>EST. TRAVEL TIME <br></br> 3 DAYS</span>
+    <h3 className='planetDistance'>AVG. DISTANCE <br></br> <span>384,400 KM</span></h3>
+    <h3 className='planetTravel'>EST. TRAVEL TIME <br></br> <span>3 DAYS</span></h3>
     </div>
   </>
   )
