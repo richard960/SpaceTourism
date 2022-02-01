@@ -388,11 +388,11 @@ h3 span {
     background-size: cover;
   }
   html, .main, body, #app {
-    height: auto;
+    min-height: 100%;
   }
   @media (min-height: 812px) {
     html, .main, body, #app {
-      height: 100%;
+      min-height: 100%;
     }
   }
   .home-flex {
