@@ -282,6 +282,10 @@ section {
   letter-spacing: 4.72px;
   margin-bottom: 15vh;
 }
+
+#hr-crew {
+  display: none;
+}
 .circle-nav span {
   margin-right: 50px;
 }
@@ -304,8 +308,8 @@ h3 span {
 
 .img-container {
   display: flex;
-  justify-content: end;
-  width: 720px;
+  justify-content: center;
+  width: 100%;
 }
 
 .circle {
@@ -527,7 +531,12 @@ h3 span {
     background-size: cover;
   }
   #destination {
-    background: url('./assets/destination/background-destination-tablet.jpg') no-repeat center;
+    background: url('./assets/destination/background-destination-mobile.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  #crew {
+    background: url('./assets/crew/background-crew-mobile.jpg') no-repeat center;
     background-size: cover;
   }
   html, .main, body, #app {
@@ -677,6 +686,67 @@ h3 span {
   }
   #planet-flex {
     margin-top: 10vh;
+  }
+
+  #crew-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .crew-img {
+    width: 177px;
+    height: 222px;
+  }
+  .img-container {
+    justify-content: center;
+  }
+
+  #crew-name {
+    font-size: 24px;
+  }
+
+  .crew-section #crew-title {
+    font-size: 16px;
+  }
+  #crew-description {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    width: auto;
+    margin-bottom: 5vh;
+  }
+  .crew-section {
+    align-items: center;
+    margin-left: 0;
+  }
+  .crew-section h3 {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    width: 100%;
+    text-align: center;
+    order: -1;
+    margin-bottom: 305px;
+  }
+  .circle-nav {
+    order: -1;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+    width: 45%;
+  }
+  .circle-nav span {
+    width: 10px;
+    height: 10px;
+    margin-right: 0;
+  }
+  .img-container {
+    position: absolute;
+    bottom: 410px;
+  }
+  #hr-crew {
+    display: initial;
+    bottom: 0;
+    width: 80vw;
+    height: 2px;
   }
 }
 

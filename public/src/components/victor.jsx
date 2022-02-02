@@ -24,6 +24,7 @@ const Victor = function({setCrew}) {
           </section>
           <div className='img-container'>
           <img className='crew-img' src='./assets/crew/image-victor-glover.png' width='554.39px' height='681px'></img>
+          <hr id='hr-crew'></hr>
           </div>
     </>
   )

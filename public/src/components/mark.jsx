@@ -23,6 +23,7 @@ const Mark = function({setCrew}) {
           </section>
           <div className='img-container'>
           <img className='crew-img' src='./assets/crew/image-mark-shuttleworth.png' width='453.44px' height='654px'></img>
+          <hr id='hr-crew'></hr>
           </div>
     </>
   )

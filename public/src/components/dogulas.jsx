@@ -23,6 +23,7 @@ const Douglas = function({setCrew}) {
           </section>
           <div className='img-container'>
           <img className='crew-img' src='./assets/crew/image-douglas-hurley.png' width='568.07px' height='712px'></img>
+          <hr id='hr-crew'></hr>
           </div>
     </>
   )
