@@ -238,14 +238,17 @@ section {
 #crew-flex {
   align-items: flex-start;
   margin-top: 8vh;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: nowrap;
 }
 
 .crew-section {
   display: flex;
   flex-direction: column;
   width: 488px;
+  margin-left: 10vw;
 }
+
 #crew-name {
   font-family: 'Bellefair';
   font-size: 56px;
@@ -269,8 +272,8 @@ section {
   color: #D0D6F9;
   line-height: 32px;
   width: 444px;
-  margin-bottom: 20vh;
-  height: 160px;
+  margin-bottom: 10vh;
+  height: 180px;
 }
 .crew-section h3 {
   font-family: 'Barlow Condensed';
@@ -280,15 +283,15 @@ section {
   margin-bottom: 15vh;
 }
 .circle-nav span {
-  margin-right: 10%;
+  margin-right: 50px;
 }
 .crew-section > h3 span {
   margin-right: 5%;
 }
 
 .crew-img {
-  position: relative;
-  left: 8%;
+  /* position: relative;
+  left: 8%; */
 }
 h3 span {
   font-weight: bold;
@@ -299,12 +302,17 @@ h3 span {
   display: none;
 }
 
+.img-container {
+  display: flex;
+  justify-content: end;
+  width: 720px;
+}
+
 .circle {
   width: 15px;
   height: 15px;
   background-color: #979797;
   display: inline-block;
-  margin: 4px;
   border-radius: 100%;
   cursor: pointer;
 }
@@ -339,6 +347,11 @@ h3 span {
 
   #destination {
     background: url('./assets/destination/background-destination-tablet.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  #crew {
+    background: url('./assets/crew/background-crew-tablet.jpg') no-repeat center;
     background-size: cover;
   }
 
@@ -449,6 +462,62 @@ h3 span {
   }
   #planet-flex {
     margin-bottom: initial;
+  }
+  #crew-flex {
+    align-items: center;
+  }
+  .img-container {
+    display: initial;
+  }
+  .crew-section > h3 span {
+    display: initial;
+  }
+  .crew-section {
+    width: 100%;
+    align-items: center;
+  }
+  .crew-section h3 {
+    width: 90vw;
+    text-align: left;
+    padding-left: 5%;
+    font-size: 20px;
+  }
+  .crew-section {
+    margin-left: 0;
+  }
+  .circle-nav {
+    width: 100%;
+    margin-bottom: 8vh;
+  }
+  .circle-nav span {
+    margin: 0 5% 2% 5%;
+  }
+  #crew-description {
+    margin-bottom: 8vh;
+  }
+  .crew-section #crew-title {
+    font-family: 'Bellefair';
+    font-size: 24px;
+    font-weight: normal;
+    color: #FFFFFF;
+    opacity: 50.42%;
+  }
+  #crew-name {
+    font-size: 40px;
+  }
+  #crew-description {
+    font-size: 16px;
+    width: 458px;
+    height: 84px;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+  .crew-img {
+    width: 456px;
+    height: 572px;
+    position: initial;
   }
 }
 

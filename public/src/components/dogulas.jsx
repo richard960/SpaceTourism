@@ -21,7 +21,9 @@ const Douglas = function({setCrew}) {
             <span className='circle' id='c3' onClick={setCrew}></span>
             </div>
           </section>
+          <div className='img-container'>
           <img className='crew-img' src='./assets/crew/image-douglas-hurley.png' width='568.07px' height='712px'></img>
+          </div>
     </>
   )
 }

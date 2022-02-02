@@ -21,7 +21,9 @@ const Mark = function({setCrew}) {
             <span className='circle' id='c3' onClick={setCrew}></span>
             </div>
           </section>
-          <img className='crew-img' src='./assets/crew/image-mark-shuttleworth.png' width='568.07px' height='712px'></img>
+          <div className='img-container'>
+          <img className='crew-img' src='./assets/crew/image-mark-shuttleworth.png' width='453.44px' height='654px'></img>
+          </div>
     </>
   )
 }

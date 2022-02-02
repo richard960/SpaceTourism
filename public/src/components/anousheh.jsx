@@ -21,7 +21,9 @@ const Anousheh = function({setCrew}) {
             <span className='circle fill'></span>
             </div>
           </section>
-          <img className='crew-img' src='./assets/crew/image-anousheh-ansari.png' width='568.07px' height='712px'></img>
+          <div className='img-container'>
+          <img className='crew-img' src='./assets/crew/image-anousheh-ansari.png' width='615.57px' height='607px'></img>
+          </div>
     </>
   )
 }

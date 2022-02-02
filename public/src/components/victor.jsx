@@ -22,7 +22,9 @@ const Victor = function({setCrew}) {
             <span className='circle' id='c3' onClick={setCrew}></span>
             </div>
           </section>
-          <img className='crew-img' src='./assets/crew/image-victor-glover.png' width='568.07px' height='712px'></img>
+          <div className='img-container'>
+          <img className='crew-img' src='./assets/crew/image-victor-glover.png' width='554.39px' height='681px'></img>
+          </div>
     </>
   )
 }
