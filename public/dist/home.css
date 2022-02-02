@@ -389,6 +389,7 @@ h3 span {
   #nav-container {
     font-size: 14px;
     letter-spacing: 2.36px;
+    z-index: 2;
   }
   .currentPlanet {
     width: 300px;
@@ -538,14 +539,20 @@ h3 span {
   #crew {
     background: url('./assets/crew/background-crew-mobile.jpg') no-repeat center;
     background-size: cover;
+    height: 100%;
   }
-  html, .main, body, #app {
-    min-height: 100%;
+  html, body, #app, #top {
+    height: 100%;
+    min-height: '';
+  }
+
+  .main {
+    height: 100%;
   }
   @media (min-height: 812px) {
-    html, .main, body, #app {
-      min-height: 100%;
-    }
+    /* html,  #app {
+      height: 100% !important;
+    } */
   }
   .flex {
     margin-top: 16vh;
@@ -554,7 +561,7 @@ h3 span {
   #home-explore {
     width: 150px;
     height: 150px;
-    margin: 25% 0;
+    margin: 10vh;
   }
 
   #home-description {
@@ -621,7 +628,7 @@ h3 span {
     align-items: initial;
     justify-content: flex-start;
     gap: 10%;
-    z-index: 1;
+    z-index: 2;
   }
 
   /* #nav-container svg, #nav-container a {
@@ -691,6 +698,7 @@ h3 span {
   #crew-flex {
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
   .crew-img {
     width: 177px;
@@ -698,6 +706,7 @@ h3 span {
   }
   .img-container {
     justify-content: center;
+
   }
 
   #crew-name {
@@ -740,7 +749,7 @@ h3 span {
   }
   .img-container {
     position: absolute;
-    bottom: 410px;
+    bottom: 400px;
   }
   #hr-crew {
     display: initial;
