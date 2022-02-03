@@ -15,12 +15,18 @@ const Home = ({setPage}) => {
     if(rect.top - window.innerHeight <= 0) {
       document.querySelector('.flex section').classList.add('fade-in');
     }
-    window.addEventListener('scroll', () => {
+    function slide() {
       if (document.documentElement.scrollTop > rect.top) {
         document.querySelector('.flex section').classList.add('fade-in');
       }
-    })
+    }
+
+    window.addEventListener('scroll', slide)
     document.body.id = 'home';
+    return () => {
+      document.querySelector('.flex section').classList.remove('fade-in');
+      window.removeEventListener('scroll', slide, false)
+    }
   }, []);
 
     return(
@@ -34,7 +40,7 @@ const Home = ({setPage}) => {
             <span></span>
           </div>
           <nav id='nav-container' className={isToggle ? 'slideIn' : 'slideOut'}>
-          <svg id='close' onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+          <svg id='close' onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fillRule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
           <a className='directory' id='00'><span id='00'>00</span> HOME</a>
             <a className='transition' id='01' onClick={setPage}><span id='01'>01</span> DESTINATION</a>
             <a className='transition' id='02'onClick={setPage}><span id='02'>02</span> CREW</a>
