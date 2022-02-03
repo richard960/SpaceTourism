@@ -18,7 +18,7 @@ const Vehicle = function() {
           </section>
           <div className='img-container tech-img'>
           <img className='crew-img' src='./assets/technology/image-launch-vehicle-portrait.jpg' width='445px' height='457px'></img>
-          <hr id='hr-crew'></hr>
+          {/* <hr id='hr-crew'></hr> */}
           </div>
     </>
   )

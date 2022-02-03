@@ -1,32 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import Vehicle from './vehicle.jsx';
 import Spaceport from './spaceport.jsx';
+import Capsule from './capsule.jsx';
 const Technologies = ({setPage}) => {
   const [isToggle, setToggle] = useState(false);
-  // const [crew, setCrew] = useState('douglas')
+  const [currentPage, setCurrentPage] = useState('1');
 
   const toggle = function() {
     setToggle(!isToggle);
   }
-  // const currentCrew = function(e) {
-  //   const id = e.target.id;
-  //   if(id === 'c0') {
-  //     setCrew('douglas');
-  //     return;
-  //   }
-  //   if(id === 'c1') {
-  //     setCrew('mark');
-  //     return;
-  //   }
-  //   if(id === 'c2') {
-  //     setCrew('victor');
-  //     return;
-  //   }
-  //   if(id === 'c3') {
-  //     setCrew('anousheh');
-  //     return;
-  //   }
-  // }
+
+  const page = function(e) {
+    console.log(e.target.innerText)
+    setCurrentPage(e.target.innerText);
+  }
+
   useEffect(() => {
     document.body.id = 'technology';
   }, []);
@@ -46,17 +34,21 @@ const Technologies = ({setPage}) => {
           <a className='transition' id='00' onClick={setPage}><span id='00'>00</span> HOME</a>
             <a className='transition' id='01' onClick={setPage}><span id='01'>01</span> DESTINATION</a>
             <a className='transition' id='02'onClick={setPage}><span id='02'>02</span> CREW</a>
-            <a className='direcotry' id='03'><span id='03'>03</span> TECHNOLOGY</a>
+            <a className='directory' id='03'><span id='03'>03</span> TECHNOLOGY</a>
           </nav>
         </header>
         <div className='flex flex-tech' id='crew-flex'>
           <div id='tech-button'>
-           <button className='current-button'>1</button>
-           <button className='current-button'>2</button>
-           <button className='current-button'>3</button>
+           <button className='current-button' onClick={page}>1</button>
+           <button className='current-button' onClick={page}>2</button>
+           <button className='current-button' onClick={page}>3</button>
           </div>
-          <Vehicle/>
-          {/* <Spaceport/> */}
+            {currentPage === '1'
+              ? <Vehicle/> :
+                currentPage === '2'
+                ? <Spaceport/> :
+                  currentPage === '3'
+                  ? <Capsule/> : <Vehicle/>}
         </div>
       </div>)
 }
