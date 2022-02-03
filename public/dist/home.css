@@ -23,6 +23,13 @@ body {
   width: 100%;
   height: auto;
 }
+
+#technology {
+  background: url('./assets/technology/background-technology-desktop.jpg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
 header {
   margin-top: 5vh;
   display: flex;
@@ -371,6 +378,7 @@ h5#tech-title {
   color: #D0D6F9;
   width: 444px;
 }
+
 div.flex-tech#crew-flex {
   justify-content: end;
   margin-top: 12vh;
