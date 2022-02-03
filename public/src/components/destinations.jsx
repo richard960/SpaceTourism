@@ -3,7 +3,7 @@ import Moon from './moon.jsx';
 import Mars from './mars.jsx';
 import Europa from './europa.jsx';
 import Titan from './titan.jsx'
-const Destinations = () => {
+const Destinations = ({setPage}) => {
   const [isToggle, setToggle] = useState(false);
   const [dest, setDest] = useState('MOON');
 
@@ -29,10 +29,10 @@ const Destinations = () => {
           </div>
           <nav id='nav-container' className={isToggle ? 'slideIn' : 'slideOut'}>
           <svg id='close' onClick={toggle} xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fillRule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
-            <a className='transition'><span>00</span> HOME</a>
-            <a className='directory'><span>01</span> DESTINATION</a>
-            <a className='transition'><span>02</span> CREW</a>
-            <a className='transition'><span>03</span> TECHNOLOGY</a>
+            <a className='transition' id='00' onClick={setPage}><span id='00'>00</span> HOME</a>
+            <a className='directory' id='01'><span id='01'>01</span> DESTINATION</a>
+            <a className='transition' id='02'onClick={setPage}><span id='02'>02</span> CREW</a>
+            <a className='transition' id='03'onClick={setPage}><span id='03'>03</span> TECHNOLOGY</a>
           </nav>
         </header>
         <div className='flex' id='planet-flex'>

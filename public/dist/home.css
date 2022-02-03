@@ -320,6 +320,61 @@ h3 span {
   border-radius: 100%;
   cursor: pointer;
 }
+button {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 32px;
+  font-family: 'Bellefair';
+}
+
+#tech-button {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 2vw;
+}
+.tech-section {
+  margin-left: 0;
+  flex-grow: 0.5;
+}
+.tech-img {
+  width: initial;
+}
+h5#tech-title {
+  font-size: 16px;
+  font-family: 'Barlow Condensed';
+  font-weight: normal;
+  letter-spacing: 2.7px;
+}
+#tech-name {
+  font-size: 56px;
+  font-family: 'Bellefair';
+  font-weight: normal;
+  width: max-content;
+  margin: 2vh 0;
+}
+.tech-section h3 {
+  position: relative;
+  top: -60px;
+  left: -100px;
+  margin-bottom: 35px;
+}
+#tech-description {
+  font-size: 18px;
+  font-family: 'Barlow';
+  font-weight: normal;
+  line-height: 32px;
+  color: #D0D6F9;
+  width: 444px;
+}
+div.flex-tech#crew-flex {
+  justify-content: end;
+  margin-top: 12vh;
+}
 .fill {
   background-color: #FFFFFF;
 }
