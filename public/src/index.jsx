@@ -10,7 +10,10 @@ const App = () => {
 
   const currentPage = function(e) {
     const el = e.target;
-    console.log(el)
+    if(el.id === 'home-explore') {
+      setPage('01');
+      return;
+    }
     setPage(el.id)
   }
 
