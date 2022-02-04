@@ -59,7 +59,10 @@ const Home = ({setPage}) => {
               because we’ll give you a truly out of this world experience!
             </p>
           </section>
+          <div id='p'>
             <button id='home-explore' onClick={setPage}>EXPLORE</button>
+
+          </div>
         </div>
       </div>)
 }
