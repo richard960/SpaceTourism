@@ -431,7 +431,7 @@ div.flex-tech#crew-flex {
 }
 
 #p:hover::after {
-  animation: pulse 1000ms infinite;
+  animation: pulse 1000ms alternate infinite;
 }
 @keyframes pulse {
   0% {
