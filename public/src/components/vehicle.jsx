@@ -16,8 +16,8 @@ const Vehicle = function() {
             it's quite an awe-inspiring sight on the launch pad!
             </p>
           </section>
-          <div className='img-container tech-img'>
-          <img className='crew-img' src='./assets/technology/image-launch-vehicle-portrait.jpg' width='445px' height='457px'></img>
+          <div className='img-container tech-imgc'>
+          <img className='tech-img' id='launch' width='445px' height='457px'></img>
           {/* <hr id='hr-crew'></hr> */}
           </div>
     </>

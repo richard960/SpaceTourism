@@ -16,8 +16,8 @@ const Spaceport = function() {
             of the Earth’s rotation for launch.
             </p>
           </section>
-          <div className='img-container tech-img'>
-          <img className='crew-img' src='./assets/technology/image-spaceport-portrait.jpg' width='445px' height='457px'></img>
+          <div className='img-container tech-imgc'>
+          <img className='tech-img' src='./assets/technology/image-spaceport-portrait.jpg' width='445px' height='457px'></img>
           {/* <hr id='hr-crew'></hr> */}
           </div>
     </>

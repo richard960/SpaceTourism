@@ -39,9 +39,9 @@ const Technologies = ({setPage}) => {
         </header>
         <div className='flex flex-tech' id='crew-flex'>
           <div id='tech-button'>
-           <button className='current-button' onClick={page}>1</button>
-           <button className='current-button' onClick={page}>2</button>
-           <button className='current-button' onClick={page}>3</button>
+           <button className={`current-button ${currentPage === '1' ? 'fill' : ''}`} onClick={page}>1</button>
+           <button className={`current-button ${currentPage === '2' ? 'fill' : ''}`} onClick={page}>2</button>
+           <button className={`current-button ${currentPage === '3' ? 'fill' : ''}`} onClick={page}>3</button>
           </div>
             {currentPage === '1'
               ? <Vehicle/> :

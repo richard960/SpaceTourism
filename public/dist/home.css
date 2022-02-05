@@ -339,7 +339,7 @@ button {
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  color: white;
+  color: black;
   background-color: rgba(255, 255, 255, 0);
   font-size: 32px;
   font-family: 'Bellefair';
@@ -357,7 +357,7 @@ button {
   margin-left: 0;
   flex-grow: 0.5;
 }
-.tech-img {
+.tech-imgc {
   width: initial;
 }
 h5#tech-title {
@@ -388,9 +388,16 @@ h5#tech-title {
   width: 444px;
 }
 
+#launch {
+  background: url('./assets/technology/image-launch-vehicle-portrait.jpg');
+}
+
 div.flex-tech#crew-flex {
   justify-content: end;
   margin-top: 12vh;
+}
+.flex-tech {
+  gap: 0;
 }
 .fill {
   background-color: #FFFFFF;
@@ -455,7 +462,7 @@ div.flex-tech#crew-flex {
   }
 
   #crew {
-    background: url('./assets/crew/background-crew-tablet.jpg') no-repeat center;
+    background: url('./assets/crew/background-crew-tablet.jpg') no-repeat;
     background-size: cover;
   }
 
@@ -626,6 +633,39 @@ div.flex-tech#crew-flex {
     width: 456px;
     height: 572px;
     position: initial;
+  }
+
+  #tech-button {
+    order: -1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 0;
+    width: 70%;
+    align-self: initial;
+    margin-top: 2vh;
+  }
+  .tech-imgc {
+    order: -2;
+    width: 100%;
+    /* background: url('./assets/technology/image-launch-vehicle-landscape.jpg');
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
+  }
+  #launch {
+    background: url('./assets/technology/image-launch-vehicle-landscape.jpg') no-repeat center;
+    height: 310px;
+    width: 100%;
+    background-size: cover;
+  }
+  .tech-section h3 {
+    top: -450px;
+    left: 10px;
+  }
+  button {
+    width: 58px;
+    height: 58px;
+    font-size: 24px;
   }
 }
 
