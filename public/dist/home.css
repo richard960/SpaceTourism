@@ -389,9 +389,14 @@ h5#tech-title {
 }
 
 #launch {
-  background: url('./assets/technology/image-launch-vehicle-portrait.jpg');
+  content: url('./assets/technology/image-launch-vehicle-portrait.jpg');
 }
-
+#capsule {
+  content: url('./assets/technology/image-space-capsule-portrait.jpg');
+}
+#spaceport {
+  content: url('./assets/technology/image-spaceport-portrait.jpg');
+}
 div.flex-tech#crew-flex {
   justify-content: end;
   margin-top: 12vh;
@@ -653,11 +658,22 @@ div.flex-tech#crew-flex {
     box-sizing: border-box; */
   }
   #launch {
-    background: url('./assets/technology/image-launch-vehicle-landscape.jpg') no-repeat center;
+    content: url('./assets/technology/image-launch-vehicle-landscape.jpg');
     height: 310px;
     width: 100%;
-    background-size: cover;
   }
+  #capsule {
+    content: url('./assets/technology/image-space-capsule-landscape.jpg');
+    height: 310px;
+    width: 100%;
+  }
+
+  #spaceport {
+    content: url('./assets/technology/image-spaceport-landscape.jpg');
+    height: 310px;
+    width: 100%;
+  }
+
   .tech-section h3 {
     top: -450px;
     left: 10px;

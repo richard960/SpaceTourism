@@ -17,7 +17,7 @@ const Spaceport = function() {
             </p>
           </section>
           <div className='img-container tech-imgc'>
-          <img className='tech-img' src='./assets/technology/image-spaceport-portrait.jpg' width='445px' height='457px'></img>
+          <img className='tech-img' id='spaceport' width='445px' height='457px'></img>
           {/* <hr id='hr-crew'></hr> */}
           </div>
     </>
