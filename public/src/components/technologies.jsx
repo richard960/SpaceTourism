@@ -11,7 +11,6 @@ const Technologies = ({setPage}) => {
   }
 
   const page = function(e) {
-    console.log(e.target.innerText)
     setCurrentPage(e.target.innerText);
   }
 
