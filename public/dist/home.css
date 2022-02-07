@@ -562,6 +562,9 @@ div.flex-tech#crew-flex {
   .directory::after, .transition::after {
     bottom: -30%;
   }
+  nav > .transition::after, nav > .directory::after {
+    bottom: -100%;
+  }
   .transition::after {
     height: 0.15em;
   }
